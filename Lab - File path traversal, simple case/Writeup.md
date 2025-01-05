@@ -3,7 +3,7 @@
 
 ![1.png](1.png)
 
-# Goal: retrieve the contents of the /etc/passwd file. 
+## Goal: retrieve the contents of the /etc/passwd file. 
 
 This is a simple lab where we are introduced to **File Path Traversal**. In the description we're already told where is the location of the vulnerability.
 
@@ -13,7 +13,7 @@ So if access the lab, we will be introduced to this homepage.
 
 ![Pasted image 20250103193235.png](2.png)
 
-## Steps to solving
+## Steps
 
 1. Based on the description of the lab we should look for the vulnerability in the image. we can select one of the product to see it's product page.
 
