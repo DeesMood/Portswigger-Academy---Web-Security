@@ -1,5 +1,5 @@
 
-# Lab - Unprotected admin functionality with unpredictable URL
+# Lab: Unprotected admin functionality with unpredictable URL
 
 ![](Pasted%20image%2020250105215620.png)
 
@@ -9,4 +9,13 @@ The clue we are given to this is that there is an unprotected admin panel but th
 
 ## Steps
 
-1. 
+1. So some ideas where an admin panel could be disclosed could be places like:
+	- .htaccess
+	- robots.txt
+	- In this case, it's actually in the source code where there's JS validation to check if the user is an administrator.
+
+	![](Pasted%20image%2020250223034815.png)
+	
+2. We can just go to the admin panel and delete the user `carlos`.
+	![](Pasted%20image%2020250223035128.png)
+	
