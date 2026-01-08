@@ -15,12 +15,12 @@
 
 > [!NOTE]
 > Terms
-> FE -> Front End
-> BE -> Back End
-> TE -> Transfer-Encoding
-> CL -> Content- Length
-> H2 -> `HTTP/2`
-> 0 -> Content-Length: 0
+> - FE -> Front End
+> - BE -> Back End
+> - TE -> Transfer-Encoding
+> - CL -> Content- Length
+> - H2 -> `HTTP/2`
+> - 0 -> Content-Length: 0
 
 > In TE, there is null termination for telling the server the end of a request body
 ```
