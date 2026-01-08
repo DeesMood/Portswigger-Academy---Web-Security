@@ -6,13 +6,15 @@
 ## Methodology
 ### Timing Techniques
 
-> [!warning] Prerequisites
+> [!warning]
+> Prerequisites
 > - [ ] Set protocol [HTTP/1.1 / HTTP/2]
 > - [ ] ***Repeater*** -> Settings -> Turn off **Update Content-Length**
 >      > Can be turned on for CL.[X] exploits
 > - [ ] (Optional) **Show non-printable chars**
 
-> [!NOTE] Terms
+> [!NOTE]
+> Terms
 > FE -> Front End
 > BE -> Back End
 > TE -> Transfer-Encoding
