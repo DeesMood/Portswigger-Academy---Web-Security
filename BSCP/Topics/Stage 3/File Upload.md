@@ -132,7 +132,7 @@ Content-Type: image/jpeg
 
 ### [6. Exploiting XXE via image file upload](https://portswigger.net/web-security/xxe/lab-xxe-via-file-upload)
 
-> [!NOTE] Title
+> [!NOTE]
 > File upload XXE to exfiltrate `/etc/hostname` via SVG 
 
 **Uploading XXE**
