@@ -42,7 +42,7 @@ One of the BIGGEST trouble I encounter during the exam is my potato device freez
 **6. Understanding the technical process**
 
 It is important you understand the process of the exam, so you don't make the same mistake I did. The process:
-1. After buying the exam, you can start the exam from the certification page accessed via my account
+1. After purchasing the exam voucher, you can start the exam from the certification page accessed via my account
 2. **Open this in the browser your using for your proctor as well** since the proctor can only run on browsers other than the _**Burp Browser**_. This is the mistake I made because the exam page will also be the page for submitting you project file, you will not be able to submit it if you're accessing it from your _**Burp Browser**_ that is tied to your current burp session.
 3.  Setup the proctor for the exam, it will ask for a goverment ID and permission to share you screens and webcam
 4.  Start the exam, it will generate 2 apps for you to finish and the timer will start running
