@@ -4,6 +4,7 @@ The BSCP exam is split into 3 stages for 2 application. The purpose of mapping t
 
 # What is BINGOS?
 
-It's a compilation of possible vulnerabilites for the BSCP exam. I made it based on this table originally from [here](https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study/raw/main/images/3stages.png).
+It's a compilation of possible vulnerabilities for the BSCP exam. I made it based on this table originally from [here](https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study/raw/main/images/3stages.png).
 
+![](attachments/Pasted%20image%2020260114135619.png)
 
