@@ -1,3 +1,10 @@
+# Possible Vulnerabilities
+
+These are possible vulnerabilities that can appear in the BSCP exam. I made this based on this post:
+
+[https://py-us3r.github.io/bscp-roadmap-bscproadmap/#
+](https://py-us3r.github.io/bscp-roadmap-bscproadmap/#:~:text=Blind%20output%20redirection-,Exam%20Tips,-This%20table%20shows)
+
 ## Stage 1
 ### Host Header Poison (Forgot-Password)
 
