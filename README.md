@@ -39,7 +39,7 @@ During the exam I have a testing flow I work with, this allowed me to detect vul
 
 **5. Use a good device**
 
-One of the BIGGEST trouble I encounter during the exam is my potato device freezing on me intermittently during the entire exam. I was unable to use my LINUX VM (because I use Windows) during the exam due to my potato device.
+One of the BIGGEST trouble I encounter during the exam is my potato device freezing on me intermittently during the entire exam. I was unable to use my LINUX VM during the exam due to my potato device.
 
 **6. Understanding the technical process**
 
