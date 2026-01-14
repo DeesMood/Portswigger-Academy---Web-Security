@@ -9,3 +9,5 @@ I've made it in two parts:
 https://docs.google.com/spreadsheets/d/1GMdZ_9Zq30h5Lz_y4O2846Mz3owlgRf3xGVpR5l7BgA/edit?usp=sharing
 
 2. I also made a per stage for BSCP note written in obsidian markdown that can be seen from [here](https://github.com/DeesMood/Portswigger-Academy---Web-Security/tree/main/BSCP/Topics)
+
+## Personal Tips
