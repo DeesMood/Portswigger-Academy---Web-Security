@@ -44,4 +44,10 @@ One of the BIGGEST trouble I encounter during the exam is my potato device freez
 **6. Understanding the technical process**
 
 It is important you understand the process of the exam, so you don't make the same mistake I did. The process:
-1. Start the exam from the certification page accessed 
+1. After buying the exam, you can start the exam from the certification page accessed via my account
+2. **Open this in the browser your using for your proctor as well** since the proctor can only run on browsers other than the _**Burp Browser**_. This is the mistake I made because the exam page will also be the page for submitting you project file, you will not be able to submit it if you're accessing it from your _**Burp Browser**_ that is tied to your current burp session.
+3.  Setup the proctor for the exam, it will ask for a goverment ID and permission to share you screens and webcam
+4.  Start the exam, it will generate 2 apps for you to finish and the timer will start running
+5.  Work on all the apps in your BurpSuite, this will be the proof that Portswigger will use to validate your exam (Save Intruder Attacks, I really recommend this as I think it could really help speed up the validation process)
+6.  After submitting the final flag, the exam page will turn into a submission page for the project file. Zip and upload your project file. If you have any trouble email Portswigger immediately on hello@portswigger.net. I had trouble uploading the project file, so I emailed them my project file which they accepted.
+7. You will get your result in 3-5 days, I got mine in 2 days in email, some people didn't get one so you can check your certification page if it's updated or not. 
