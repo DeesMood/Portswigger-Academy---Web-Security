@@ -6,17 +6,17 @@ https://docs.google.com/spreadsheets/d/1GMdZ_9Zq30h5Lz_y4O2846Mz3owlgRf3xGVpR5l7
 
 ## Portswigger BSCP Guide
 
-This resource is for anyone trying to study for the ***Burp Suite Certified Practitioner*** (**BSCP**) exam. I made the notes in stages for the exam. The notes can be seen from [here](https://github.com/DeesMood/Portswigger-Academy---Web-Security/tree/main/BSCP/Topics)
+This resource is for anyone trying to study for the ***Burp Suite Certified Practitioner*** (**BSCP**) exam. I made the notes in stages for the exam. The notes can be seen from [here.](https://github.com/DeesMood/Portswigger-Academy---Web-Security/tree/main/BSCP/Topics)
 
 ### Personal Tips
 
 **1. Follow [the preparation methodology](https://portswigger.net/web-security/certification/how-to-prepare#:~:text=Still%20learning%20the%20fundamentals%20of%20web%20security%3F) given by Portswigger.**
 
-It's quite crucial for the exam, that you do all the **Apprentice** and **Practitioner** labs. You will gain a good amount of knowledge on web vulnerabilities for the exam and real engagements.
+It's quite crucial for the exam that you do all the **Apprentice** and **Practitioner** labs. You will gain a good amount of knowledge on web vulnerabilities for the exam and real engagements.
 
 **2. Make good notes that you can refer to fast.**
 
-The exam is only 4 hours, everything should be structured efficiently for the exam. I personally uploaded all my notes in Google Sheets and Github.
+Because the exam is only 4 hours, everything should be structured efficiently for the exam. I personally uploaded all my notes in Google Sheets and Github.
 
 **3. _Burp Scanner_ for the win**
 
