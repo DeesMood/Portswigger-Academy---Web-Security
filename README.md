@@ -25,7 +25,7 @@ The scanner helped me in so many ways:
 - It helps in confirming injection vulnerabilities like SQL injection. I got an **advanced search** functionality that most likely contain an SQLi like in the practice exam.
 - It tells you the working payload for a vulnerability it detected. This allows for fast exploitation by modifying the scanner payload.
 
-_**DISCLAIMER: It will not find authentication vulnerabilities, API vulnerabilities, and user enumeration vulnerability**_
+> DISCLAIMER: It will not find authentication vulnerabilities, API vulnerabilities, and user enumeration vulnerability
 
 **4. Have a clear flow for testing**
 
